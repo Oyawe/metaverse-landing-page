@@ -28,7 +28,7 @@ const WhatsNew = () => (
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px] ">
           {newFeatures.map((feature) => (
             <NewFeatures
-              key={feature.title}
+              key={feature.id}
               imgUrl={feature.imgUrl}
               title={feature.title}
               subtitle={feature.subtitle}

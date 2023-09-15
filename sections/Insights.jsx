@@ -26,11 +26,7 @@ const Insights = () => (
       />
       <div className="mt-[50px] flex flex-col gap-[30px]">
         {insights.map((insight, index) => (
-          <InsightCard
-            key={`insight-${index}`}
-            {...insight}
-            index={index + 1}
-          />
+          <InsightCard key={insight.id} {...insight} index={index + 1} />
         ))}
       </div>
     </motion.div>
