@@ -13,7 +13,7 @@ const Feedback = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: "false", amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
     >
       <motion.div
@@ -39,7 +39,7 @@ const Feedback = () => (
 
       <motion.div
         variants={fadeIn("left", "tween", 0.2, 1)}
-        className="relative flex-1 justify-center items-center"
+        className="relative items-center justify-center flex-1"
       >
         <img
           src="/planet-09.png"

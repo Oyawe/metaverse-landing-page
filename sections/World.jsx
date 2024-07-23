@@ -16,7 +16,7 @@ const World = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: "false", amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <TypingText title="| People on the world" textStyles="text-center" />
@@ -33,7 +33,7 @@ const World = () => (
         variants={fadeIn("up", "tween", 0.3, 1)}
         className="relative mt-[68px] flex w-full h-[550px]"
       >
-        <img src="/map.png" alt="map" className="w-full h-full object-cover" />
+        <img src="/map.png" alt="map" className="object-cover w-full h-full" />
         <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d66a0]">
           <img src="/people-02.png" alt="people" className="w-full h-full" />
         </div>
